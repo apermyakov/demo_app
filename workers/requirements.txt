@@ -1,0 +1,36 @@
+# Shared worker dependencies
+redis>=5.0
+pydantic>=2.0
+boto3>=1.28
+Pillow>=10.0
+numpy>=1.24
+
+# Audio processing
+ffmpeg-python>=0.2
+pydub>=0.25
+
+# Face detection
+mediapipe>=0.10
+# retinaface-pytorch>=0.0.8  # optional, for fallback
+
+# Vocal separation
+demucs>=4.0
+
+# Alignment
+openai-whisper>=20231117
+# whisper-timestamped>=1.14  # for word-level alignment
+
+# Image generation (for stylization worker)
+diffusers>=0.27
+transformers>=4.37
+accelerate>=0.27
+safetensors>=0.4
+# ip-adapter  # installed from git
+
+# Video generation
+# Install based on chosen approach:
+# - For SVD: already in diffusers
+# - For Kling API: httpx
+
+torch>=2.1
+torchvision>=0.16
